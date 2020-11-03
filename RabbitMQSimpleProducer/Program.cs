@@ -1,18 +1,16 @@
-# RabbitMQSimpleProducer
-
-## How to use
-Install-Package RabbitMQSimpleProducer -Version 1.0.0
-
-```csharp
-using System;
+﻿using System;
 using RabbitMQSimpleConnectionFactory.Entity;
 
-namespace ConsoleApp10 {
-    class Program {
-        static void Main(string[] args) {
+namespace ConsoleApp10
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
 
             var producer = new RabbitMQSimpleProducer.Producer(
-                new ConnectionSetting {
+                new ConnectionSetting
+                {
                     HostName = "xxxxx",
                     Password = "xxxxx",
                     UserName = "xxxxx",
@@ -30,4 +28,3 @@ namespace ConsoleApp10 {
         }
     }
 }
-```
